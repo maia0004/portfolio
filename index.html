@@ -14,34 +14,44 @@
 </head>
 <body>
 
-  <div class="header-container">
-    <div class="row">
-      <div class="col-2">
-        <div class="logo">
-          <img class="logo" src="img/logo.png" alt="logo">
-        </div>
-      </div>
-      <div class="col-8">
-        <h1>Design Mage</h1>
-      </div>
-      <div class="col-2">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
-        </li>
+    <!--Here are the skip links-->
+  <ul class="skip-links">
+    <li><a href="#nav" aria-label="Add skip to main nav">main nav</a></li>
+    <li><a href="#main" aria-label="Add skip to main content">main content</a></li>
+  </ul>
+
+  <!--if I try to put col-2 to logo and col-10 to h1 it mess a lot with web page
+  col-5 and col-7 was the best I could do to everything look at least nice in the same time
+  it-->
+  <div class="row">
+    <div class="col-5">
+      <div class="logo">
+        <img class="logo" src="img/logo.png" alt="logo">
       </div>
     </div>
+    <div class="col-7">
+      <h1>Design Mage</h1>
+    </div>
   </div>
-
+  <!--I tried to change nav write color on css to black, but I had no success-->
+  <nav id="nav">
+  <ul class="nav nav-pills justify-content-center nav-fill">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="projects.html">Projects</a>
+    </li>
+  </ul>
+  
   <h2>Home</h2>
+  <main id="main">
   <p>Welcome to my Portfolio</p>
   <picture>
     <source srcset="img/projects224x290.png" 
@@ -51,18 +61,20 @@
     <img src="img/projects.png" alt="Poster">
   </picture>
 
-
   <div class="button">
       <a href="projects.html" 
       class="btn btn-dark btn-lg active" 
       role="button" aria-pressed="true">Click Here</a>
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
-  <div class="footer">
+<!--the offset was changing only on web page so I 
+took it off and centered through css-->
+<div class="row2">
+  <div class="col-12">
     <footer>&copy; Design Mage 2023</footer>
   </div>
+</div>
 </html>

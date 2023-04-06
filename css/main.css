@@ -53,25 +53,43 @@ table {
 body {
   background-color: #f7bdca;
 }
-.header-container {
-  border-bottom: 3px solid #8d8bad;
+/*Used :focus to press the tab key and access different
+links on a webpage. */
+a:focus {
+  outline: 3px solid black;
+  } 
+/*used it to hide the skip links*/
+.skip-links a {
+  position: absolute;
+  top: -15em;
+  left: 2em;
+  background-color: #414141 ;
+  color: #a8a1c8;
+  font-weight: bold;
 }
+.skip-links a:focus{
+  top: 0;
+}
+/*end layout*/
 .logo {
   width: 70px;
-  padding: 5px;
+  padding-left: 5px;
 }
 h1 {
-  font-size: 50px;
-  text-align: center;
+  position: absolute;
   font-family: Delius Swash Caps;
   font-size: 28px;
   padding-top: 35px;
   font-weight: bold;
   color: #414141;
 }
+.row {
+  border-bottom: 3px solid #8d8bad;
+}
 li {
-  list-style-type: none;
-  padding-top: 6.5px;
+  font-family: Delius Swash Caps;
+  background-color: #a8a1c8;
+  color: #414141;
 }
 h2 {
   font-family: Pacifico;
@@ -102,35 +120,63 @@ img {
   text-align: center;
   padding-bottom: 50px;
 }
+.button2 {
+  text-align: center;
+  padding-top: 20px;
+}
+.about {
+  margin-bottom: 300px;
+}
 .message {
   border: 4px solid #8d8bad;
   padding: 20px;
+  margin: 10px 50px 100px 50px;
 }
-.footer {
+.star {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.row2 {
   background-color: #a8a1c8;
   font-family: Quicksand;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
-  padding: 50px;
 }
+
 
 @media screen and (min-width: 576px) {
-  .header-container {
-   background-color: #a8a1c8;
-   border: none;
+  .row {
+    background-color: #a8a1c8;
+    border: 3px solid #8d8bad
   }
-}
+  .star {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  }
 @media screen and (min-width: 900px) {
-
-  .header-container { 
+  .row { 
     background-image: url(../img/wallpaper.jpg);
     background-size: cover;
-    padding-bottom:350px
+    padding-bottom:200px;
+    padding-right: 700px;
+    border: none;
   }
-.logo {
-  position: absolute;
-}
-h1 {
-position: absolute;
-padding-left: -100px;
-}
+  .star {
+    position: relative;
+    width: 180px;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
 }
