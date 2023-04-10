@@ -1,4 +1,4 @@
-  /*Used :focus to press the tab key and access different
+/*Used :focus to press the tab key and access different
 links on a webpage. */
 a:focus {
   outline: 3px solid black;
