@@ -1,9 +1,6 @@
-/*Used :focus to press the tab key and access different
-links on a webpage. */
 a:focus {
   outline: 3px solid black;
   } 
-/*used it to hide the skip links*/
 .skip-links a {
   position: absolute;
   top: -30em;
