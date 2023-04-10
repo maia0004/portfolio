@@ -12,8 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
+<body class="body" style="background-color: rgba(247,189,202);">
     <!--Here are the skip links-->
     <ul class="skip-links">
       <li><a href="#nav" aria-label="Add skip to main nav">main nav</a></li>
@@ -21,22 +20,17 @@
       <li><a href="#message" aria-label="Add skip to send a message">send a message</a></li>
     </ul>
   
-    <!--if I try to put col-2 to logo and col-10 to h1 it mess a lot with web page
-    col-5 and col-7 was the best I could do to everything look at least nice in the same time
-    it-->
   <div class="row">
     <div class="col-5">
-      <div class="logo">
-        <img class="logo" src="img/logo.png" alt="logo">
-      </div>
+      <img class="py-1" src="img/logo.png" style: auto; height="100px" alt="logo">
     </div>
     <div class="col-7">
-      <h1>Design Mage</h1>
+      <h1 class="h1 mt-5 position-absolute text-dark fw-bold">
+        Design Mage</h1>
     </div>
   </div>
   <nav id="nav">
-  <ul class="nav nav-pills justify-content-center nav-fill">
-    <li class="nav-item">
+    <ul class="nav nav-pills justify-content-center nav-fill" style="background-color: rgba(200,197,214);">    <li class="nav-item">
       <a class="nav-link" href="index.html">Home</a>
     </li>
     <li class="nav-item">
@@ -52,38 +46,40 @@
   </nav>
 
 
-  <h2>Contact</h2>
+  <h2 class="h4 text-center mt-4">Contact</h2>
   <nav id="main"></nav>
-  <p>Name: Maia, Ana Carolina</p>
-  <p>Email: email@gmail.com</p>
+  <p class="text-center pt-2">Name: Maia, Ana Carolina</p>
+  <p class="text-center pt-2">Email: email@gmail.com</p>
 
-  <h2>Send a Message</h2>
+  <h2 class="h4 text-center mt-5">Send a Message</h2>
   <nav id="message">
-  <div class="message">
-    <h3>Email</h3>
+  <div class="message border border-3 border-dark mx-5 mb-5 mt-4 px-4 py-4" 
+  style="background-color: rgba(200,197,214);">
+    <h3 class="h6">Email</h3>
     <div class="form-floating mb-3">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput"></label>
     </div>
-    <h3>Comments</h3>
+    <h3 class="h6">Comments</h3>
     <div class="form-floating">
       <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
       <label for="floatingTextarea"></label>
     </div>
-    <div class="button2">
+    
+    <div class="text-center mt-3">
       <a href="projects.html" 
       class="btn btn-dark btn-lg active" 
       role="button" aria-pressed="true">Send</a>
     </div>
+
   </div>
   </nav>
+
+
+  <footer class="text-center pt-5 pb-5" style="background-color: rgba(200,197,214);">
+    &copy; Design Mage 2023</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
-<div class="row2">
-  <div class="col-12">
-    <footer>&copy; Design Mage 2023</footer>
-  </div>
-</div>
 </html>

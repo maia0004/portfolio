@@ -12,30 +12,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="body" style="background-color: rgba(247,189,202);">
     <!--Here are the skip links-->
     <ul class="skip-links">
       <li><a href="#nav" aria-label="Add skip to main nav">main nav</a></li>
       <li><a href="#main" aria-label="Add skip to main content">main content</a></li>
     </ul>
   
-    <!--if I try to put col-2 to logo and col-10 to h1 it mess a lot with web page
-    col-5 and col-7 was the best I could do to everything look at least nice in the same time
-    it-->
   <div class="row">
     <div class="col-5">
-      <div class="logo">
-        <img class="logo" src="img/logo.png" alt="logo">
-      </div>
+      <img class="py-1" src="img/logo.png" style: auto; height="100px" alt="logo">
     </div>
     <div class="col-7">
-      <h1>Design Mage</h1>
+      <h1 class="h1 mt-5 position-absolute text-dark fw-bold">
+        Design Mage</h1>
     </div>
   </div>
 
   <nav id="nav">
-  <ul class="nav nav-pills justify-content-center nav-fill">
-    <li class="nav-item">
+    <ul class="nav nav-pills justify-content-center nav-fill" style="background-color: rgba(200,197,214);">    <li class="nav-item">
       <a class="nav-link" href="index.html">Home</a>
     </li>
     <li class="nav-item">
@@ -51,20 +46,15 @@
   </nav>
 
 <div class="about">
-  <h2>About</h2>
+  <h2 class="h4 mt-4 text-center">About</h2>
   <nav id="main">
-  <p>Welcome to my portfolio.</p> 
-  <p>As an Ux/Ui designer, I want this website to show my artistic abilities by doing logos and creating draws to be used on the client brands.</p>
-  <p>Here I'm also showing my code knowledge.</p>
+  <p class="text-center pt-2">Welcome to my portfolio.</p> 
+  <p class="text-center pt-2">As an Ux/Ui designer, I want this website to show my artistic abilities by doing logos and creating draws to be used on the client brands.</p>
+  <p class="text-center pt-2 pb-5">Here I'm also showing my code knowledge.</p>
   </nav>
 </div>
-
+<footer class="text-center mt-5 pt-5 pb-5" style="background-color: rgba(200,197,214);">
+  &copy; Design Mage 2023</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
-
-<div class="row2">
-  <div class="col-12">
-    <footer>&copy; Design Mage 2023</footer>
-  </div>
-</div>
 </html>

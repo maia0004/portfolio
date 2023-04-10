@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="body" style="background-color: rgba(247,189,202);">
 
     <!--Here are the skip links-->
   <ul class="skip-links">
@@ -20,22 +20,18 @@
     <li><a href="#main" aria-label="Add skip to main content">main content</a></li>
   </ul>
 
-  <!--if I try to put col-2 to logo and col-10 to h1 it mess a lot with web page
-  col-5 and col-7 was the best I could do to everything look at least nice in the same time
-  it-->
   <div class="row">
     <div class="col-5">
-      <div class="logo">
-        <img class="logo" src="img/logo.png" alt="logo">
-      </div>
+      <img class="py-1" src="img/logo.png" style: auto; height="100px" alt="logo">
     </div>
     <div class="col-7">
-      <h1>Design Mage</h1>
+      <h1 class="h1 mt-5 position-absolute text-dark fw-bold">
+        Design Mage</h1>
     </div>
   </div>
   <!--I tried to change nav write color on css to black, but I had no success-->
   <nav id="nav">
-  <ul class="nav nav-pills justify-content-center nav-fill">
+  <ul class="nav nav-pills justify-content-center nav-fill" style="background-color: rgba(200,197,214);">
     <li class="nav-item">
       <a class="nav-link" href="index.html">Home</a>
     </li>
@@ -50,31 +46,28 @@
     </li>
   </ul>
   
-  <h2>Home</h2>
+  <h2 class="h4 mt-4 text-center">Home</h2>
   <main id="main">
-  <p>Welcome to my Portfolio</p>
+  <p class="text-center pt-2 pb-3">Welcome to my Portfolio</p>
+
+<div class="text-center">
   <picture aria-details="poster to go to projects poster">
     <source srcset="img/projects224x290.png" 
-    media="(max-width: 576px)"/>
+    media="(max-width: 36em)"/>
     <source srcset="img/projects274x354.png" 
-    media="(max-width: 900px)"/>
-    <img src="img/projects.png" alt="Poster">
+    media="(max-width: 60em)"/>
+    <img src="img/projects.png" class="mx-auto" alt="Poster">
   </picture>
+</div>
 
-  <div class="button">
-      <a href="projects.html" 
-      class="btn btn-dark btn-lg active" 
+  <div class="button text-center">
+      <a href="projects.html" class="btn btn-dark btn-lg active mt-3 mb-5" 
       role="button" aria-pressed="true">Click Here</a>
   </div>
 
+  <footer class="text-center pt-5 pb-5" style="background-color: rgba(200,197,214);">
+    &copy; Design Mage 2023</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
-<!--the offset was changing only on web page so I 
-took it off and centered through css-->
-<div class="row2">
-  <div class="col-12">
-    <footer>&copy; Design Mage 2023</footer>
-  </div>
-</div>
 </html>
