@@ -1,13 +1,7 @@
-a:focus {
-  outline: 3px solid black;
-  } 
-.skip-links a {
+  .skip-links a {
   position: absolute;
   top: -30em;
   left: 50%;
-  background-color: black;
-  color: #a8a1c8; 
-  font-weight: bold;
   font-family: Quicksand;
 }
 .skip-links a:focus{
